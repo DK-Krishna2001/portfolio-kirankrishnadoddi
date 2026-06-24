@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R V Kiran Krishna Doddi | AI/ML Engineer & Data Scientist</title>
+  <meta name="description" content="Portfolio of R V Kiran Krishna Doddi - AI/ML Engineer & Data Scientist, M.S. Data Science Graduate from the University at Buffalo. Specializing in applied ML, spectral informatics, and high-performance, latency-optimized AI systems.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Particle Canvas -->
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Header / Navigation -->
+  <header class="main-header" id="main-header">
+    <div class="nav-container">
+      <a href="#hero" class="logo-link" id="logo-link">
+        <span class="logo-text">KIRAN<span class="text-accent">.</span></span>
+      </a>
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" aria-controls="nav-menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-content">
+          <div class="badge" id="hero-badge"><span class="status-dot"></span>AI, ML & Data Science</div>
+          <h1 class="hero-title">
+            <span class="title-greet"><span class="terminal-prompt">~/portfolio $</span> Hi, I'm</span>
+            <span class="title-name">R V Kiran Krishna Doddi</span>
+          </h1>
+          <h2 class="hero-tagline">AI/ML Engineer & Data Scientist<span class="cursor-blink">_</span></h2>
+          <p class="hero-description">
+            Applying machine learning and spectral informatics at the <strong>J. Hachmann Research Group</strong> (SUNY Buffalo). Simultaneously building latency-optimized AI systems for real-world impact—ready to engineer production-grade solutions.
+          </p>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value" data-count="4">4</span>
+              <span class="metric-label">Production Systems</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value" data-count="6">6+</span>
+              <span class="metric-label">ML Models Deployed</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value" data-count="13">13M+</span>
+              <span class="metric-label">Records Processed</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">0.94</span>
+              <span class="metric-label">Best ARI Score</span>
+            </div>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btn-hero-projects">View Projects</a>
+            <a href="#contact" class="btn btn-outline" id="btn-hero-contact">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual-content">
+          <div class="avatar-frame">
+            <img src="assets/avatar.jpg" alt="R V Kiran Krishna Doddi - AI/ML Engineer & Data Scientist profile picture" class="avatar-img" id="avatar-img" width="400" height="400">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <a href="#about" class="scroll-arrow" aria-label="Scroll to About Section">
+          <span class="arrow-dot"></span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <h2 class="section-title"><span class="text-accent">01.</span> About Me</h2>
+        
+        <div class="about-grid">
+          <div class="about-bio">
+            <p class="lead-text">
+              I specialize in designing and deploying end-to-end Machine Learning systems, scalable data pipelines, and agentic AI architectures.
+            </p>
+            <p>
+              Having completed my <strong>Master of Science in Data Science</strong> from the <strong>University at Buffalo (SUNY)</strong>, I focus on bridging the gap between advanced models and production systems. My practical engineering background allows me to construct workflows that are not just mathematically sound, but also performant, reliable, and secure.
+            </p>
+            <p>
+              Currently, I work as a <strong>Research Assistant</strong> at the <strong>J. Hachmann Research Group</strong>, applying machine learning to complex chemical datasets. Alongside my research, I focus on open-source contributions and building high-performance AI systems optimized to slash latency and solve real-world problems.
+            </p>
+          </div>
+          
+          <div class="experience-timeline" style="display: flex; flex-direction: column; justify-content: center;">
+            <h3 class="timeline-title" style="margin-bottom: 1.5rem;">Education</h3>
+            
+            <div class="timeline-wrapper" style="padding-left: 1.5rem;">
+              <div class="timeline-item" style="margin-bottom: 1.5rem;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Jan 2025 — May 2026</span>
+                  <h4 class="timeline-role">M.S. in Data Science</h4>
+                  <p class="timeline-org">University at Buffalo, SUNY, New York</p>
+                </div>
+              </div>
+              
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">June 2020 — April 2024</span>
+                  <h4 class="timeline-role">B.Tech. in Computer Science & Electronic Engineering</h4>
+                  <p class="timeline-org">KIIT University, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="experience-section" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+      <div class="section-container">
+        <h2 class="section-title"><span class="text-accent">02.</span> Professional Experience</h2>
+        
+        <div class="timeline-wrapper" style="position: relative; padding-left: 2rem; max-width: 900px; margin-inline: auto;">
+          <div class="timeline-wrapper::before" style="content: ''; position: absolute; left: 5px; top: 10px; bottom: 10px; width: 2px; background: linear-gradient(to bottom, var(--color-accent), var(--color-secondary));"></div>
+          
+          <!-- Experience 1: UB GRA -->
+          <div class="timeline-item" style="margin-bottom: 3.5rem; position: relative;">
+            <div class="timeline-marker" style="left: -2.35rem; top: 8px;"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">February 2025 — Present</span>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.25rem;">Research Assistant <span class="text-secondary">— Applied ML & Spectral Informatics</span></h3>
+              <p class="timeline-org" style="margin-bottom: 1rem; font-weight: 500; color: var(--text-secondary);">University at Buffalo | <a href="https://hachmannlab.cbe.buffalo.edu" target="_blank" rel="noopener noreferrer" style="color: var(--color-secondary); text-decoration: underline;">J. Hachmann Research Group</a></p>
+              
+              <ul class="timeline-bullets">
+                <li><strong>Multimodal Classification:</strong> Benchmarked six clustering and ensemble algorithms (K-Means, HDBSCAN, Random Forest, XGBoost) across 152+ samples and 7,000+ features, achieving Adjusted Rand Index (ARI) up to 0.94 validated through bootstrap resampling.</li>
+                <li><strong>Latent Structure Accuracy:</strong> Fact-checked quantitative findings using PCA, LDA, UMAP, t-SNE, and Isomap to improve structure verification against ground-truth material signatures across FTIR, ATR-FTIR, and NIR modalities.</li>
+                <li><strong>Pre-processing Pipelines:</strong> Optimized model generalization and reduced misclassification rates by constructing robust spectral preprocessing chains integrating SNV normalization, Savitzky-Golay filtering, and derivative transformations.</li>
+                <li><strong>Cross-Functional Analytics:</strong> Translated complex high-dimensional ML outputs into publication-ready visualizations, accelerating strategic research decisions for three cross-functional scientific and stakeholder teams.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Experience 2: IBM Intern -->
+          <div class="timeline-item" style="position: relative;">
+            <div class="timeline-marker" style="left: -2.35rem; top: 8px;"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">November 2022 — April 2023</span>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.25rem;">Machine Learning Intern <span class="text-secondary">— Autonomous Steering Angle Prediction</span></h3>
+              <p class="timeline-org" style="margin-bottom: 1rem; font-weight: 500; color: var(--text-secondary);">IBM Skills Build & Coincent Academic Internship (Remote)</p>
+              
+              <ul class="timeline-bullets">
+                <li><strong>Neural Steering Predictions:</strong> Designed, trained, and deployed a 9-layer TensorFlow Convolutional Neural Network (CNN) with 250K+ parameters on 45,500+ driving frames, accomplishing real-time steering angle predictions validated with MAE and MSE metrics.</li>
+                <li><strong>Robustness to Distribution Shifts:</strong> Engineered a complex data augmentation pipeline simulating view translations, lane-shift recovery patterns, and rotational corrections, improving CNN stability under varied weather and road conditions.</li>
+                <li><strong>Performance Assessment:</strong> Authored extensive validation assessments explaining network behavior and activation mapping across 80/20 train-validation splits, aligning technical and non-technical stakeholders on deployment readiness.</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="section-container">
+        <h2 class="section-title"><span class="text-accent">03.</span> Selected Projects</h2>
+        
+
+        
+        <div class="projects-grid">
+          
+          <!-- Project 1: Trisoul AI -->
+          <article class="project-card featured" id="card-trisoul" data-category="agents">
+            <div class="project-image-wrapper">
+              <img src="assets/project_trisoul.png" alt="Trisoul AI dashboard showing agent topologies and clinical sentiment graphs" class="project-img" width="600" height="400">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <span class="project-category">Agentic AI & Healthcare</span>
+                <h3 class="project-title">TriSoul AI</h3>
+              </div>
+              <p class="project-tagline">Production Agentic AI System with Full-Stack Deployment</p>
+              
+              <div class="project-description-tabs">
+                <div class="tabs-nav">
+                  <button class="tab-btn active" data-tab="agentic" id="btn-tab-agentic">Agentic Workflows</button>
+                  <button class="tab-btn" data-tab="backend" id="btn-tab-backend">Backend & Streams</button>
+                  <button class="tab-btn" data-tab="security" id="btn-tab-security">Sec & Ops</button>
+                </div>
+                <div class="tabs-content">
+                  <div class="tab-pane active" id="tab-agentic">
+                    <ul>
+                      <li><strong>Parallel Multi-Agent Workflows:</strong> Engineered a Parallel Multi-Agent Workflow using LangGraph StateGraph executing clinical reasoning and emotional sentiment pipelines concurrently.</li>
+                      <li><strong>Semantic RAG Systems:</strong> Built a Semantic RAG system utilizing ChromaDB to index and fetch long-term user memory, merging historical context with active sessions.</li>
+                      <li><strong>Intent-Based Routing:</strong> Implemented intent-based routing to detect crisis signals, automatically diverting queries to dedicated emergency workflows.</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="tab-backend">
+                    <ul>
+                      <li><strong>Streamed Response API:</strong> Architected a streamed FastAPI backend (`/ask?stream=true`) delivering real-time, token-level LLM output to drastically reduce TTFT.</li>
+                      <li><strong>Hybrid Geolocation:</strong> Designed a geolocation resolver parsing Nginx headers and injecting a 5-mile locationBias into the Google Places API (New) for local therapist search.</li>
+                      <li><strong>Hybrid Model Routing:</strong> Designed a Dynamic Swapping Wrapper routing standard queries through <strong>Groq LPU</strong> for low-latency text inference, automatically swapping to <strong>OpenAI (gpt-4o-mini)</strong> for multimodal/vision requests (image inputs).</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="tab-security">
+                    <ul>
+                      <li><strong>Cryptographic Firewall:</strong> Verified Firebase ID tokens in FastAPI middleware, ensuring absolute user data isolation.</li>
+                      <li><strong>Cloud Database Security:</strong> Secured cloud databases by locking down Firestore Security Rules, routing all reads/writes through server-side admin privileges.</li>
+                      <li><strong>Production Infrastructure:</strong> Deployed a 24/7 Git-backed server on DigitalOcean with systemd and Nginx reverse proxies, achieving RAGAS Faithfulness = 1.0, zero hallucinations, and zero safety violations.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="project-tech-tags">
+                <span>FastAPI</span>
+                <span>LangGraph</span>
+                <span>LangChain</span>
+                <span>PyTorch</span>
+                <span>Groq API</span>
+                <span>OpenAI API</span>
+                <span>ChromaDB</span>
+                <span>Firebase</span>
+                <span>DigitalOcean</span>
+                <span>Nginx</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/DK-Krishna2001/Trisoul-AI" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Trisoul AI GitHub repository"><i class="fa-brands fa-github"></i> Source Code</a>
+                <a href="https://trisoulai.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Trisoul AI live demo website"><i class="fa-solid fa-globe"></i> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: wikimcp -->
+          <article class="project-card" id="card-wikimcp" data-category="agents">
+            <div class="project-image-wrapper">
+              <img src="assets/project_wikimcp.png" alt="WikiMCP architecture showing TF-IDF formulas and digital brain" class="project-img" width="600" height="400">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <span class="project-category">Open Source Contribution</span>
+                <h3 class="project-title">WikiMCP</h3>
+              </div>
+              <p class="project-tagline">Git-backed multi-user wiki MCP server — long-term memory for any AI.</p>
+              
+              <ul class="project-bullets">
+                <li><strong>Ranked Context Retrieval:</strong> Reduced AI wiki lookup latency from ~90s to ~29s (~68% improvement) by replacing repeated full-page reads with relevance-ranked snippets.</li>
+                <li><strong>BM25-Style Scoring Layer:</strong> Built a dependency-free BM25-style scoring layer in Python with title and heading boosts to optimize search relevance.</li>
+                <li><strong>MCP Tool Integration:</strong> Added <code>search_pages()</code> and <code>retrieve_context()</code> MCP tools to help AI clients find high-signal content with fewer tool calls and less context overhead.</li>
+                <li><strong>Open Source Contribution:</strong> Successfully opened and merged PR #23 into <code>mohith-das/wikimcp</code>, contributing directly to the MCP ecosystem.</li>
+              </ul>
+              
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>BM25 Algorithm</span>
+                <span>Model Context Protocol (MCP)</span>
+                <span>RAG</span>
+                <span>Wikipedia API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/DK-Krishna2001/wikimcp" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="wikimcp GitHub repository"><i class="fa-brands fa-github"></i> Repository</a>
+                <a href="https://github.com/mohith-das/wikimcp/pull/23" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="PR #23 on wikimcp"><i class="fa-solid fa-code-pull-request"></i> Merged PR #23</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: TransGuard AI -->
+          <article class="project-card" id="card-transguard" data-category="ml-ds">
+            <div class="project-image-wrapper">
+              <img src="assets/project_pipeline.png" alt="TransGuard project diagram displaying financial pipelines" class="project-img" width="600" height="400">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <span class="project-category">Risk Modeling & Analytics</span>
+                <h3 class="project-title">TransGuard AI</h3>
+              </div>
+              <p class="project-tagline">Financial Risk Modeling and Analytics Platform</p>
+              
+              <ul class="project-bullets">
+                <li><strong>Scalable ELT Pipeline:</strong> Processed 13,314,061 financial transaction records across 2,000 users, building scalable pipelines and REST APIs on Databricks/PySpark for real-time scoring.</li>
+                <li><strong>Behavioral Feature Engineering:</strong> Crafted 20+ behavioral risk features across 7 fraud categories using dbt, Random Forest, and ensemble methods, evaluating outputs with precision/recall analysis.</li>
+                <li><strong>Anomaly Detection Dashboard:</strong> Flagged 211,393 anomalous records (1.59% anomaly rate), delivering interactive KPI dashboards built with FastAPI, Streamlit, and Plotly.</li>
+              </ul>
+              
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>PySpark</span>
+                <span>Databricks</span>
+                <span>PostgreSQL</span>
+                <span>dbt</span>
+                <span>FastAPI</span>
+                <span>Streamlit</span>
+                <span>Plotly</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/DK-Krishna2001/TransGuard-AI-Intelligent-Transaction-Fraud-Detection-and-Analytics-Platform" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="TransGuard AI GitHub repository"><i class="fa-brands fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: DriftGuard -->
+          <article class="project-card" id="card-driftguard" data-category="mlops">
+            <div class="project-image-wrapper">
+              <img src="assets/project_driftguard.png" alt="DriftGuard project dashboard displaying statistical distributions and turbofan engine diagnostics" class="project-img" width="600" height="400">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="project-details">
+              <div class="project-header">
+                <span class="project-category">MLOps & Drift Diagnostics</span>
+                <h3 class="project-title">DriftGuard</h3>
+              </div>
+              <p class="project-tagline">NASA CMAPSS Turbofan Engine Drift Monitoring and Root-Cause Diagnosis Platform</p>
+              
+              <ul class="project-bullets">
+                <li><strong>Regime-Aware Feature Monitoring:</strong> Monitored feature drift (PSI, Kolmogorov-Smirnov, Wasserstein distance) and operating regime drift (Jensen-Shannon divergence) across 21 sensors using NASA CMAPSS FD002 dataset.</li>
+                <li><strong>Automated Root-Cause Analysis:</strong> Designed a pattern-based diagnosis model to isolate feature/prediction drift, identifying operating condition shifts vs. physical engine degradation.</li>
+                <li><strong>Action Engine & Persistence:</strong> Built an automated decision engine (retrain vs. investigate vs. ignore) connected to SQLite database for historical logging and alerting.</li>
+                <li><strong>Simulated Fault Injection:</strong> Created a validation harness to inject synthetic fault patterns, visualized on an interactive Streamlit performance monitoring dashboard.</li>
+              </ul>
+              
+              <div class="project-tech-tags">
+                <span>Python</span>
+                <span>Streamlit</span>
+                <span>SQLite</span>
+                <span>Scikit-learn</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>MLOps</span>
+                <span>Statistical Tests</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/DK-Krishna2001/DriftGuard-NASA-CMAPSS-Turbofan-Drift-Monitor" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="DriftGuard GitHub repository"><i class="fa-brands fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-container">
+        <h2 class="section-title"><span class="text-accent">04.</span> Technical Skills</h2>
+        <p class="section-subtitle">A comprehensive breakdown of my engineering capabilities and tools.</p>
+        
+        <div class="skills-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card">
+            <h3><i class="fa-solid fa-code"></i> Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag-item"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-terminal"></i> C++</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-chart-line"></i> R</span>
+            </div>
+          </div>
+          
+          <!-- Category 2: LLM & Agentic AI -->
+          <div class="skill-category-card">
+            <h3><i class="fa-solid fa-brain"></i> LLM & Agentic AI</h3>
+            <div class="skill-tags">
+              <span class="skill-tag-item"><i class="fa-solid fa-network-wired"></i> LangGraph</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-link"></i> LangChain</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-bolt"></i> Groq API</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-brain"></i> OpenAI API</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-circle-nodes"></i> ChromaDB</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-microchip"></i> MCP Protocol</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-magnifying-glass"></i> RAG</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-shield-heart"></i> RAGAS</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-comments"></i> NLP</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Machine Learning & DS -->
+          <div class="skill-category-card">
+            <h3><i class="fa-solid fa-chart-simple"></i> ML & Data Science</h3>
+            <div class="skill-tags">
+              <span class="skill-tag-item"><i class="fa-solid fa-fire"></i> PyTorch</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-brain"></i> TensorFlow</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-gears"></i> Scikit-learn</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-calculator"></i> NumPy</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-filter"></i> Feature Engineering</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-chart-pie"></i> Statistical Analysis</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-circle-nodes"></i> Clustering</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-triangle-exclamation"></i> Anomaly Detection</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases & MLOps -->
+          <div class="skill-category-card">
+            <h3><i class="fa-solid fa-server"></i> DBs, MLOps & Platforms</h3>
+            <div class="skill-tags">
+              <span class="skill-tag-item"><i class="fa-solid fa-table"></i> dbt</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-bolt"></i> PySpark</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-network-wired"></i> Databricks</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-database"></i> PostgreSQL</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-database"></i> MongoDB</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-fire-flame-curved"></i> Firebase</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-gauge-high"></i> FastAPI</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-server"></i> Nginx</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-aws"></i> AWS</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-digitalocean"></i> DigitalOcean</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-git-alt"></i> Git</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-chart-column"></i> Streamlit</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <h2 class="section-title"><span class="text-accent">05.</span> Get In Touch</h2>
+        <p class="section-subtitle">Interested in collaborating or hiring? Shoot me a message!</p>
+        
+        <div class="contact-wrapper">
+          <div class="contact-details">
+            <h3 class="contact-title">Connect with me</h3>
+            <p>
+              I am open to roles involving AI Engineering, Machine Learning Engineering, and Data Science. Feel free to contact me directly!
+            </p>
+            
+            <ul class="contact-links-list">
+              <li>
+                <span class="icon-wrap"><i class="fa-solid fa-envelope"></i></span>
+                <div class="link-info">
+                  <span class="link-label">Email</span>
+                  <a href="mailto:rvkkdoddi2001@gmail.com" class="link-value">rvkkdoddi2001@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="icon-wrap"><i class="fa-solid fa-location-dot"></i></span>
+                <div class="link-info">
+                  <span class="link-label">Location</span>
+                  <span class="link-value">Buffalo, NY (Willing to relocate)</span>
+                </div>
+              </li>
+              <li>
+                <span class="icon-wrap"><i class="fa-brands fa-github"></i></span>
+                <div class="link-info">
+                  <span class="link-label">GitHub</span>
+                  <a href="https://github.com/DK-Krishna2001" class="link-value" target="_blank" rel="noopener noreferrer">github.com/DK-Krishna2001</a>
+                </div>
+              </li>
+              <li>
+                <span class="icon-wrap"><i class="fa-brands fa-linkedin"></i></span>
+                <div class="link-info">
+                  <span class="link-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/kiran-krishna-doddi-227b80246/" class="link-value" target="_blank" rel="noopener noreferrer">linkedin.com/in/kiran-krishna-doddi-227b80246</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="contact-form-container">
+            <form action="#" class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Name</label>
+                  <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                  <span class="error-msg" id="name-error" aria-live="polite">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email</label>
+                  <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+                  <span class="error-msg" id="email-error" aria-live="polite">Please enter a valid email address.</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" name="subject" required placeholder="Collaboration Opportunity">
+                <span class="error-msg" id="subject-error" aria-live="polite">Please enter a subject.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" required rows="6" placeholder="Your message here..."></textarea>
+                <span class="error-msg" id="message-error" aria-live="polite">Please enter your message.</span>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              
+              <div class="form-status-msg success" id="form-success-msg" aria-live="polite">
+                <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <p class="footer-copy">
+        &copy; 2026 R V Kiran Krishna Doddi. All Rights Reserved.
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/DK-Krishna2001" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kiran-krishna-doddi-227b80246/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:rvkkdoddi2001@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-note">
+        Engineered with 3D perspective rendering, native Scroll-Driven animations, and zero dependencies.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Floating Theme Accent Customizer -->
+  <div class="theme-customizer" id="theme-customizer" aria-label="Theme Accent Color Customizer">
+    <div class="customizer-toggle" id="customizer-toggle" role="button" tabindex="0" aria-label="Toggle customizer panel">
+      <i class="fa-solid fa-palette"></i>
+    </div>
+    <div class="customizer-panel">
+      <h4>Accent Color</h4>
+      <div class="color-options">
+        <span class="color-opt active" data-theme="cyber" style="background: linear-gradient(135deg, #10b981, #06b6d4);" title="Cyber (Emerald & Cyan)" role="button" tabindex="0" aria-label="Set Cyber theme"></span>
+        <span class="color-opt" data-theme="vapor" style="background: linear-gradient(135deg, #d946ef, #8b5cf6);" title="Vaporwave (Purple & Pink)" role="button" tabindex="0" aria-label="Set Vaporwave theme"></span>
+        <span class="color-opt" data-theme="solar" style="background: linear-gradient(135deg, #f59e0b, #ef4444);" title="Solar (Amber & Orange)" role="button" tabindex="0" aria-label="Set Solar theme"></span>
+        <span class="color-opt" data-theme="matrix" style="background: linear-gradient(135deg, #22c55e, #10b981);" title="Matrix (Green & Sage)" role="button" tabindex="0" aria-label="Set Matrix theme"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/canvas.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
