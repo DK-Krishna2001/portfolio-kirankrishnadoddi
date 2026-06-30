@@ -106,7 +106,7 @@ export default async function handler(req, res) {
   };
 
   try {
-    await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from,
       to,
       replyTo: submission.email,
@@ -128,7 +128,12 @@ export default async function handler(req, res) {
       `
     });
 
-    return json(res, 200, { ok: true });
+    if (error) {
+      console.error('Resend email failed:', error);
+      return json(res, 502, { ok: false, error: 'Message could not be sent right now. Please email me directly.' });
+    }
+
+    return json(res, 200, { ok: true, id: data?.id });
   } catch (error) {
     console.error('Contact email failed:', error);
     return json(res, 500, { ok: false, error: 'Message could not be sent right now. Please email me directly.' });
