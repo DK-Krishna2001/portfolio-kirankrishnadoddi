@@ -127,13 +127,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- 7. Contact Form Handler with Validation ---
   const form = document.getElementById('contact-form');
   const successMsg = document.getElementById('form-success-msg');
+  const errorMsg = document.getElementById('form-error-msg');
   const submitBtn = document.getElementById('btn-submit');
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     let isFormValid = true;
-    const inputs = form.querySelectorAll('input, textarea');
+    const inputs = form.querySelectorAll('input:not([name="company"]), textarea');
+    successMsg.style.display = 'none';
+    errorMsg.style.display = 'none';
 
     // Trigger validity check
     inputs.forEach(input => {
@@ -148,29 +151,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     if (isFormValid) {
-      // Disable inputs and show loading state on button
       submitBtn.disabled = true;
       const btnSpan = submitBtn.querySelector('span');
       const btnIcon = submitBtn.querySelector('i');
-      
       const originalText = btnSpan.textContent;
+
       btnSpan.textContent = 'Sending...';
       btnIcon.className = 'fa-solid fa-spinner fa-spin';
 
-      // Fake API request delay
-      setTimeout(() => {
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(Object.fromEntries(new FormData(form)))
+        });
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || result.ok !== true) {
+          throw new Error(result.error || 'Unable to send message.');
+        }
+
         successMsg.style.display = 'flex';
         form.reset();
-        
-        btnSpan.textContent = originalText;
-        btnIcon.className = 'fa-solid fa-paper-plane';
-        submitBtn.disabled = false;
-
-        // Hide success message after 5 seconds
         setTimeout(() => {
           successMsg.style.display = 'none';
         }, 5000);
-      }, 1500);
+      } catch (error) {
+        errorMsg.style.display = 'flex';
+      } finally {
+        btnSpan.textContent = originalText;
+        btnIcon.className = 'fa-solid fa-paper-plane';
+        submitBtn.disabled = false;
+      }
     }
   });
 

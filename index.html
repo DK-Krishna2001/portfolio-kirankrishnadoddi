@@ -491,7 +491,12 @@
           </div>
           
           <div class="contact-form-container">
-            <form action="#" class="contact-form" id="contact-form" novalidate>
+            <form action="/api/contact" method="post" class="contact-form" id="contact-form" novalidate>
+              <div class="form-group honeypot-field" aria-hidden="true">
+                <label for="form-company">Company</label>
+                <input type="text" id="form-company" name="company" tabindex="-1" autocomplete="off">
+              </div>
+
               <div class="form-row">
                 <div class="form-group">
                   <label for="form-name">Name</label>
@@ -525,6 +530,9 @@
               <div class="form-status-msg success" id="form-success-msg" aria-live="polite">
                 <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
               </div>
+              <div class="form-status-msg error" id="form-error-msg" aria-live="polite">
+                <i class="fa-solid fa-circle-exclamation"></i> Message could not be sent right now. Please email me directly.
+              </div>
             </form>
           </div>
         </div>
@@ -537,16 +545,13 @@
   <footer class="main-footer">
     <div class="footer-container">
       <p class="footer-copy">
-        &copy; 2026 R V Kiran Krishna Doddi. All Rights Reserved.
+        &copy; 2026 R V Kiran Krishna Doddi. All rights reserved.
       </p>
       <div class="footer-socials">
         <a href="https://github.com/DK-Krishna2001" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/kiran-krishna-doddi-227b80246/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:rvkkdoddi2001@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
       </div>
-      <p class="footer-note">
-        Engineered with 3D perspective rendering, native Scroll-Driven animations, and zero dependencies.
-      </p>
     </div>
   </footer>
 

@@ -1173,6 +1173,10 @@
     position: relative;
   }
 
+  .honeypot-field {
+    display: none;
+  }
+
   .form-group label {
     font-size: 0.85rem;
     font-weight: 600;
@@ -1218,6 +1222,17 @@
     display: block;
   }
 
+  .form-group input.invalid-shake,
+  .form-group textarea.invalid-shake {
+    border-color: var(--color-danger);
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.1);
+  }
+
+  .form-group input.invalid-shake + .error-msg,
+  .form-group textarea.invalid-shake + .error-msg {
+    display: block;
+  }
+
   .btn-submit {
     align-self: flex-start;
     border: none;
@@ -1236,6 +1251,12 @@
     background-color: rgba(16, 185, 129, 0.1);
     border: 1px solid rgba(16, 185, 129, 0.2);
     color: var(--color-success);
+  }
+
+  .form-status-msg.error {
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    color: var(--color-danger);
   }
 
   /* Footer */
@@ -1270,12 +1291,6 @@
 
   .footer-socials a:hover {
     color: var(--color-secondary);
-  }
-
-  .footer-note {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    font-family: var(--font-mono);
   }
 
   /* === AI Engineer Aesthetic Elements === */
@@ -1761,4 +1776,3 @@
   outline: 2px solid var(--color-secondary);
   outline-offset: 3px;
 }
-
