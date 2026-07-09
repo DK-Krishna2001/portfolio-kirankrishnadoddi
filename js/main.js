@@ -319,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'AI/ML Engineer & Data Scientist',
       'Building Production-Grade AI Systems',
       'Agentic AI & LLM Architect',
-      'Research Assistant @ UB'
+      'ML Research Engineer @ UB'
     ];
     let roleIndex = 0;
     let charIndex = 0;
